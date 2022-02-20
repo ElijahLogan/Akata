@@ -24,6 +24,10 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   networks: {
     hardhat: {
       chainId: 31337
+    },
+    ropsten: {
+      url: "https://ropsten.infura.io/v3/3cff61759a5b4f2c85665d7448e0841b",
+      accounts: [`0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80`]
     }
   }
 };
